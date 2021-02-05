@@ -5,35 +5,26 @@
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int x, y;
-	int num, num1, num2, num3;
+int x, y;
 
-	for (x = 0; x <= 99; x++)
-	{
-		for (y = 0; y <= 99; y++)
-		{
-		num = (x / 10);
-		num1 = (x % 10);
-		num2 = (y / 10);
-		num3 = (y % 10);
-		if ((num == num2 && num1 < num3) || num < num2)
-		{
-			putchar (num + '0');
-			putchar (num1 + '0');
-			putchar (' ');
-			putchar (num2 + '0');
-			putchar (num3 + '0');
-			if (num != 9 || num1 != 8 || num2 != 9 || num3 !=9)
-			{
-				putchar (',');
-				putchar (' ');
-			}
-		}
-	}
-	}
-	putchar ('\n');
-	return (0);
+for (x = 0; x < 100 ; x++)
+{
+for (y = x + 1; y < 100 ; y++)
+{
+putchar(x / 10 + '0');
+putchar(x % 10 + '0');
+putchar(' ');
+putchar(y / 10 + '0');
+putchar(y % 10 + '0');
+if (!((x == 98) && (y == 99)))
+{
+putchar(',');
+putchar(' ');
+}
+}
+}
+putchar('\n');
+return (0);
 }
