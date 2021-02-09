@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
-* main -print the alphabet.
+* print_alphabet - print a finish in z.
 *
 * Return: Always 0
 */
