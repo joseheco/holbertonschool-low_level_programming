@@ -12,7 +12,7 @@ int i = 0;
 
 for (i = 0; i < 10; i++)
 {
-_putchar(T[i]);
+_putchar(word[i]);
 }
 return (0);
 }
