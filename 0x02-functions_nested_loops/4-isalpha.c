@@ -1,11 +1,11 @@
 #include "holberton.h"
 
- /**
- * _isalpha :  define is a character is alphabetic.
- * @c: the character to be tested.
- * Return: - 1 if c is an alphabet 0 if not.
- */
-
+/**
+*_isalpha - define a letter is lower or upper.
+   *@c: character inside libraty
+   *
+* Return: - 1 is true and 0 is false
+*/
 int _isalpha(int c)
 {
 if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
