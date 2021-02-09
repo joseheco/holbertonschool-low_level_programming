@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "holberton.h"
 
 /**
  * main - code.
@@ -7,6 +7,12 @@
  */
 int main(void)
 {
-printf("Holberton\n");
+char word[10] = "Holberton\n";
+int i = 0;
+
+for (i = 0; i < 10; i++)
+{
+_putchar(T[i]);
+}
 return (0);
 }
