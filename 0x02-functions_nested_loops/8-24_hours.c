@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * jack_bauer - prints hour min 
+ * jack_bauer - prints hour min
  *
  * Return: void
  */
@@ -14,12 +14,12 @@ for (hour = 0; hour <= 23 ; hour++)
 {
 for (min = 0; min <= 59; min++)
 {
- _putchar(hour / 10 + '0');
- _putchar(hour % 10 + '0');
- _putchar(':');
- _putchar(min / 10 + '0');
- _putchar(min % 10 + '0');
- _putchar('\n');
- }
+_putchar(hour / 10 + '0');
+_putchar(hour % 10 + '0');
+_putchar(':');
+_putchar(min / 10 + '0');
+_putchar(min % 10 + '0');
+_putchar('\n');
+}
 }
 }
