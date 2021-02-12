@@ -1,14 +1,16 @@
 #include <stdio.h>
+#include "holberton.h"
 
 /**
  * main - print 50 fibonacci numbers.
  *
  * Return: 0
  */
+
 int main(void)
 {
-int d;                     
-long int ab, bc, c;           
+long int ab, bc, c;      
+int d;
 
 ab = 1;
 bc = 2;
