@@ -26,7 +26,7 @@ for (num2 = 1; num2 < count; num2++)
 div = div * 10;
 }
 if (n == 0)
-    _putchar('0');
+_putchar('0');
 else if (n > 0)
 {
 for (num3 = count + 1; num3 > 1; num3--)
