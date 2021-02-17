@@ -2,9 +2,8 @@
 #include "holberton.h"
 
 /**
- * print_array - print array.
- * @a: array
- * @n: array
+ * print_rev - print reverse.
+ * @s: print reverse.
  */
 
 void print_rev(char *s)
