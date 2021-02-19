@@ -1,24 +1,4 @@
 #include "holberton.h"
-
-/**
- * _strlen - print alphabet
- *cap_string - function
- *@s: A pointer
- *Return: imput
- */
-
-int _strlen(char *s)
-{
-int contador;
-
-contador = 0;
-while (s[contador] != '\0')
-{
-contador++;
-}
-return (contador);
-}
-
 /**
  * cap_string - function
  * @s: pointer
@@ -27,27 +7,33 @@ return (contador);
 
 
 char *cap_string(char *s)
-    {
-    int length1;
-    int length2;
-    int i1;
-    int i2;
-    char w_sp[] = {32, '\t', '\n', 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+{
+int i = 1, j, k;
+char b[] = {32, '\t', '\n', 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
-    length1 = _strlen(s);
-    length2 = _strlen(w_sp);
-    for (i1 = 0; i1 < length1; i1++)
-    {
-            for (i2 = 0; i2 < length2; i2++)
-            {
-                    if ((s[i1] == w_sp[i2] && (s[i1 + 1] >= 97 && s[i1 + 1] <= 122)))
-                    {
-                            s[i1 + 1] = s[i1 + 1] - 32;
-                    }
-                    else if (i1 == 0 && (s[i1] >= 97 && s[i1] <= 122))
-                    {
-                            s[i1] = s[i1] - 32;
-                    }
-            }
-    }
-    }
+if (s[0] > 96 && s[0] < 123)
+s[0] -= 32;
+
+while (s[i] !='\0')
+{
+if (s[i] > 96 && s[i] < 123)
+{
+j = 0;
+k = 0;
+while (k == 0 && j < 13)
+{
+if (s[i - 1] == b[j])
+{
+k = 1;
+}
+j++;
+}
+if (k == 1)
+{
+s[i] -= 32;
+}
+}
+i++;
+}
+return (s);
+}
