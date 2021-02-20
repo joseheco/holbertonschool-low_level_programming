@@ -20,7 +20,7 @@ factor *= 10;
 while (factor > 0)
 {
 tmp = n / factor;
-n = n - (tmp * factor);
+n = n - (tmp *factor);
 if (tmp < 0)
 {
 _putchar('-');
