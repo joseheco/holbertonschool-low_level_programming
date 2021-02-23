@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * _strspn - count the number 
+ * _strspn - count the number
  * @s: string
- * @accept: character 
+ * @accept: character
  * Return: numbers of bytes
  */
 unsigned int _strspn(char *s, char *accept)
