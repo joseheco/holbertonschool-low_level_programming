@@ -9,19 +9,17 @@
  */
 void print_diagsums(int *a, int size)
 {
-int sum_A = 0, sum_B = 0, i = 0, j = 0, count = 0;
+int i;
+long int sum = 0, sizemub;
 
-while (j < size)
-{
-for (i = 0; i < size; i++)
-{
-count = j * size + i;
-if (i == j)
-sum_A = sum_A + a[count];
-if ((i + j) == (size - 1))
-sum_B = sum_B + a[count];
-}
-j++;
-}
-printf("%d, %d\n", sum_A, sum_B);
+sizemub = size * size;
+for (i = 0; i < sizemub; i += size + 1)
+sum += a[i];
+
+printf("%li, ", sum);
+sum = 0;
+
+for (i = size - 1; i <= sizemub - size + 1; i += size - 1)
+sum += a[i];
+printf("%li\n", sum);
 }
