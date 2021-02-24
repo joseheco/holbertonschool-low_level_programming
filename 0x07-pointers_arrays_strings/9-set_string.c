@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * set_string: set
+ * set_string - set_stringt
  * @s: string
  * @to: string
  */
