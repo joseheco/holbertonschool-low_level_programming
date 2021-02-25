@@ -1,11 +1,12 @@
 #include "holberton.h"
 
 /**
- * puntero - input
+ *puntero - input puntero.
  * @n: number
  * @i: number
+ * Return: 0
  */
-int puntero (int n, int i)
+int puntero(int n, int i)
 {
 	if (i * i == n)
 		return (i);
