@@ -2,7 +2,7 @@
 
 /**
  * main - Print
- * @argc: number 
+ * @argc: number
  * @argv: arguments
  * Return: 0
  */
