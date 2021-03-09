@@ -1,15 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "dog.h"
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * free_dog - frees memory.
+ * @d: pointer.
  */
-int main(void)
+void free_dog(dog_t *d)
 {
-dog_t *my_dog;
-my_dog = new_dog("Django", 3.5, "Jose");
-printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog->name, my_dog->age);
-free_dog(my_dog);
-return (0);
+if (d == NULL)
+return;
+free(d->name);
+free(d->owner);
+free(d);
 }
+
