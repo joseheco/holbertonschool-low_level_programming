@@ -1,8 +1,8 @@
 #include "lists.h"
 
 /**
- * free_dlistint - free
- * @head: Pointer
+ * free_dlistint - Free.
+ * @head: Pointer.
  */
 
 void free_dlistint(dlistint_t *head)
