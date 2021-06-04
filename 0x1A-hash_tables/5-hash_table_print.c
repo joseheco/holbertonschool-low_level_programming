@@ -12,7 +12,7 @@ hash_node_t *node;
 int x = 0;
 
 if (ht == NULL)
-    return;
+	return;
 {
 	printf("{");
 
@@ -22,10 +22,10 @@ if (ht == NULL)
 
 		while (node)
 		{
-            if(x == 1)
-                printf(", ");
+			if (x == 1)
+				printf(", ");
 			printf("'%s': '%s'", node->key, node->value);
-            x = 1;
+			x = 1;
 			node = node->next;
 		}
 	}
