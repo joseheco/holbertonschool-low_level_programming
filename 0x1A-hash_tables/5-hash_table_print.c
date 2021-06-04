@@ -15,9 +15,11 @@ if (ht == NULL)
     return;
 {
 	printf("{");
+
 	for (index = 0; index < ht->size; index++)
 	{
 		node = ht->array[index];
+
 		while (node)
 		{
             if(x == 1)
