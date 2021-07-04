@@ -19,6 +19,6 @@ def island_perimeter(grid):
         if base_actual != 0:
             altura += 1
 
-    perimeter = 2 * (count + 1)
+    perimeter = 2 * (base_max + altura)
 
     return perimeter
